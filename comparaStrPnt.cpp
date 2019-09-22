@@ -3,6 +3,8 @@ using namespace std;
 
 bool compara(char *p1, char *p2){
     for(; *p1 && *p1 == *p2; p1++, p2++);
+
+    //Se bater retorna verdadeiro, caso contrario, falso!
     return *p1 == *p2;
 }
 
@@ -14,7 +16,7 @@ int main(){
     cin.getline(pl2, 50);
 
     if(compara(pl1, pl2)){
-        cout << "As frases sap identicas" << endl;
+        cout << "As frases sao identicas" << endl;
     }else{
         cout << "As frases sao diferentes" << endl;
     }
